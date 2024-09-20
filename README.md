@@ -1,9 +1,10 @@
-# The impact of synthetic images on a deep learning model for detection and classification in contrast-enhanced mammography
+# The impact of synthetic data on a deep learning model for detection and classification in contrast-enhanced mammography
 
 ## Purpose
-This is the code used to train and validate a deep learning and a handcrafted radiomics model on real and synthetic contrast-enhanced mammography data. If you use this code, please refer to our work 
+This is the code used to train and validate a deep learning and a handcrafted radiomics model on real and synthetic contrast-enhanced mammography data. If you use this code, please refer to our work: 
 
-Van Camp, A. et al. The impact of synthetic images on a deep learning model for detection and classification in contrast-enhanced mammography. (2024). [Manuscript submitted for publication]
+* Van Camp, A. et al. The impact of synthetic data on a deep learning model for detection and classification in contrast-enhanced mammography. (2024). [Manuscript submitted for publication]
+* Van Camp A. et al., Simulated image-specific microcalcification clusters and associated mass enhancement to enhance training of a deep learning model for cancer detection in contrast-enhanced mammography. International Workshop on Breast Imaging (IWBI 2024). 2024; 1317404. doi:10.1117/12.3026879 [link](https://doi.org/10.1117/12.3026879)
 
 ## Installation
 
@@ -28,7 +29,7 @@ Key packages to install are
 * [tqdm](https://pypi.org/project/tqdm/)
 * [xgboost](https://pypi.org/project/xgboost/)
 
-The [pyradiomics](https://pypi.org/project/pyradiomics/) used to create the 2D models, may not be compatible with the most recent python versions (validated for version 3.9).
+The [pyradiomics](https://pypi.org/project/pyradiomics/) package used to create the 2D models, may not be compatible with the most recent python versions (validated for version 3.9).
 
 ## Usage
 The folder [preprocessing](preprocessing) contains all scripts used for preprocessing the data. The main file [preprocess_main.py](preprocessing/preprocess_main.py) reads parameters from [parameters.py](preprocessing/parameters.py).
