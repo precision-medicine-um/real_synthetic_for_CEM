@@ -1,14 +1,15 @@
+import os
+
+import torch
+import torchvision
 from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
-from data_generator import CEMDataset, get_monai_transform
+import utils
+
 from testparameters import *
 from predictionsMaskRCNN import evaluateCEM
-
-import os
-import torch
-import utils
-import torchvision
+from data_generator import CEMDataset, get_monai_transform
 
 
 def get_model_instance_segmentation(num_classes):

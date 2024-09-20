@@ -8,8 +8,8 @@ from torch.utils.tensorboard import SummaryWriter
 from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
-from data_generator import CEMDataset, train_one_epoch, get_monai_transform
 from trainparameters import *
+from data_generator import CEMDataset, train_one_epoch, get_monai_transform
 
 
 def get_model_instance_segmentation(num_classes):
